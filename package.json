@@ -1,0 +1,21 @@
+{
+  "name": "marvin-bridge",
+  "version": "1.0.0",
+  "description": "A double-dummy bridge hand replayer",
+  "author": "Eric Grunzke <eric@grunzke.com>",
+  "scripts": {
+    "test": "vows --spec --isolate",
+    "start": "node index.js",
+    "predeploy": "echo im about to deploy",
+    "postdeploy": "echo ive deployed",
+    "prepublish": "coffee --bare --compile --output lib/foo src/foo/*.coffee"
+  },
+  "main": "lib/foo.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.3",
+    "@types/jasmine": "^2.5.47"
+  },
+  "license": "MIT"
+}

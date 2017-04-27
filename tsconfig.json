@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target":"es5",
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "outDir": "bin",
+        "sourceMap": true,
+        "pretty": true
+    },
+    "include": [
+        "src/**/*",
+        "spec/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
