@@ -4,18 +4,16 @@
   "description": "A double-dummy bridge hand replayer",
   "author": "Eric Grunzke <eric@grunzke.com>",
   "scripts": {
-    "test": "vows --spec --isolate",
+    "test": "tsc && jasmine",
     "start": "node index.js",
     "predeploy": "echo im about to deploy",
-    "postdeploy": "echo ive deployed",
-    "prepublish": "coffee --bare --compile --output lib/foo src/foo/*.coffee"
+    "postdeploy": "echo ive deployed"
   },
   "main": "lib/foo.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "jasmine": "^2.5.3",
-    "@types/jasmine": "^2.5.47"
+    "@types/jasmine": "^2.5.47",
+    "jasmine": "^2.5.3"
   },
   "license": "MIT"
 }

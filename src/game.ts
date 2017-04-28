@@ -11,10 +11,10 @@ class Game {
         // 0=W 1=N 2=E 3=S
         let offset = this.getOffset(pbn.charAt(0));
         let hands = pbn.slice(2).split(" ");
-        this.north = new Hand(hands[(0+offset)%4]);
-        this.east = new Hand(hands[(1+offset)%4]);
-        this.south = new Hand(hands[(2+offset)%4]);
-        this.west = new Hand(hands[(3+offset)%4]);
+        this.north = new Hand(hands[(0 + offset) % 4]);
+        this.east = new Hand(hands[(1 + offset) % 4]);
+        this.south = new Hand(hands[(2 + offset) % 4]);
+        this.west = new Hand(hands[(3 + offset) % 4]);
     }
 
     private getOffset(dealer: string) {
@@ -28,4 +28,4 @@ class Game {
     }
 }
 
-export default Game
+export default Game;

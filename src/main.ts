@@ -1,3 +1,4 @@
+/* tslint:disable */
 class Suit {
     name: string;
     ordinal: number;
