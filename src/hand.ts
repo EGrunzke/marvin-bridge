@@ -36,6 +36,13 @@ class Hand {
         return intArray;
     }
 
+    gP(suit: number[]) {
+        let plays = [];
+        for (let ele of this.getPlays(suit)) {
+            let filtered = suit.filter((f) => f !== ele);
+        }
+    }
+
     getPlays(suit: number[]) {
         let plays = [];
         let previous = 16;
@@ -55,6 +62,13 @@ class Hand {
         clone.diamonds = [...this.diamonds];
         clone.clubs = [...this.clubs];
         return clone;
+    }
+
+    populateClone(clone: Hand) {
+        if (clone.spades === undefined) { clone.spades = this.spades.slice(0); }
+        if (clone.hearts === undefined) { clone.hearts = this.hearts.slice(0); }
+        if (clone.diamonds === undefined) { clone.diamonds = this.diamonds.slice(0); }
+        if (clone.clubs === undefined) { clone.clubs = this.clubs.slice(0); }
     }
 }
 

@@ -28,7 +28,7 @@ describe("Hand Spec", () => {
         expect(hand.clubs).toEqual([14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2]);
     });
 
-    it("Should create one chunk", () => {
+    it("Should create one playable chunk", () => {
         let pbn = "...AKQJT98765432";
         let hand = new Hand(pbn);
         expect(hand.getPlays(hand.clubs)).toEqual([14]);

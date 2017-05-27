@@ -6,6 +6,13 @@ class Game {
     south: Hand;
     west: Hand;
 
+    contract: number;
+    trump: Suit;
+
+    nsTricks: number;
+    ewTricks: number;
+    next: Seat;
+
     constructor(pbn: string) {
         // "W:5.KQT3.AK5.AQT95 QT2.J987654.74.K 98764..QJT96.862 AKJ3.A2.832.J743"
         // 0=W 1=N 2=E 3=S

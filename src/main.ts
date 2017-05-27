@@ -107,4 +107,9 @@ class Hand {
     }
 }
 
-console.log(new Deal().toString())
+// console.log(new Deal().toString())
+let array = ["Ace", "King", "Queen", "Jack", "Ten"]
+for (let e of array) {
+    let r = array.filter(f => e !== f);
+    console.log(r);
+}
